@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b2b33455b7.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+
+  <div class="container play-game">
+    <div class="left-content">
+      <div class="title-header" >
+        <h3 id="title-header">Sudoku Puzzle</h3>
+        
+      </div>
+      <div class="wrapper">
+        <div id="blur"></div>
+        <div class="play-interface">
+          <div class="line">
+            <div><p class="9"></p></div>
+            <div><p class="6"></p></div>
+            <div><p class="3"></p></div>
+            <div><p class="7"></p></div>
+            <div><p class="5"></p></div>
+            <div><p class="1"></p></div>
+            <div><p class="2"></p></div>
+            <div><p class="4"></p></div>
+            <div><p class="8"></p></div>
+          </div>
+    
+          <div class="line">
+            <div><p class="1"></p></div>
+            <div><p class="4"></p></div>
+            <div><p class="5"></p></div>
+            <div><p class="8"></p></div>
+            <div><p class="9"></p></div>
+            <div><p class="2"></p></div>
+            <div><p class="7"></p></div>
+            <div><p class="6"></p></div>
+            <div><p class="3"></p></div>
+          </div>
+    
+          <div class="line">
+            <div><p class="8"></p></div>
+            <div><p class="7"></p></div>
+            <div><p class="2"></p></div>
+            <div><p class="3"></p></div>
+            <div><p class="4"></p></div>
+            <div><p class="6"></p></div>
+            <div><p class="9"></p></div>
+            <div><p class="1"></p></div>
+            <div><p class="5"></p></div>
+          </div>
+          <div class="line">
+            <div><p class="3"></p></div>
+            <div><p class="1"></p></div>
+            <div><p class="9"></p></div>
+            <div><p class="5"></p></div>
+            <div><p class="2"></p></div>
+            <div><p class="4"></p></div>
+            <div><p class="6"></p></div>
+            <div><p class="8"></p></div>
+            <div><p class="7"></p></div>
+          </div>
+          <div class="line">
+            <div><p class="5"></p></div>
+            <div><p class="8"></p></div>
+            <div><p class="4"></p></div>
+            <div><p class="6"></p></div>
+            <div><p class="3"></p></div>
+            <div><p class="7"></p></div>
+            <div><p class="1"></p></div>
+            <div><p class="9"></p></div>
+            <div><p class="2"></p></div>
+          </div>
+          <div class="line">
+            <div><p class="7"></p></div>
+            <div><p class="2"></p></div>
+            <div><p class="6"></p></div>
+            <div><p class="1"></p></div>
+            <div><p class="8"></p></div>
+            <div><p class="9"></p></div>
+            <div><p class="5"></p></div>
+            <div><p class="3"></p></div>
+            <div><p class="4"></p></div>
+          </div>
+          <div class="line">
+            <div><p class="2"></p></div>
+            <div><p class="3"></p></div>
+            <div><p class="7"></p></div>
+            <div><p class="9"></p></div>
+            <div><p class="1"></p></div>
+            <div><p class="8"></p></div>
+            <div><p class="4"></p></div>
+            <div><p class="5"></p></div>
+            <div><p class="6"></p></div>
+          </div>
+          <div class="line">
+            <div><p class="4"></p></div>
+            <div><p class="5"></p></div>
+            <div><p class="1"></p></div>
+            <div><p class="2"></p></div>
+            <div><p class="6"></p></div>
+            <div><p class="3"></p></div>
+            <div><p class="8"></p></div>
+            <div><p class="7"></p></div>
+            <div><p class="9"></p></div>
+          </div>
+          <div class="line">
+            <div><p class="6"></p></div>
+            <div><p class="9"></p></div>
+            <div><p class="8"></p></div>
+            <div><p class="4"></p></div>
+            <div><p class="7"></p></div>
+            <div><p class="5"></p></div>
+            <div><p class="3"></p></div>
+            <div><p class="2"></p></div>
+            <div><p class="1"></p></div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="sidebar">
+      <div class="title">
+
+        <!--image-->
+        <div class="user">
+          <a href="#" onclick="openSideMenu()"><img src="image/IMG_2075.JPG" alt="" width="40px" class="rounded-circle"></a>
+        </div>
+
+        
+        <div id="side-menu" class="side-nav">
+          <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+          <div class="info-user">
+            <img src="image/IMG_2075.JPG" class="rounded-circle" alt="" width="40px"> 
+          </div>
+
+          <div class="list-user">
+            <h4>Quang Ha</h4>
+            <hr>
+            <a href="#">Setting</a>
+            <a href="#">Private</a>
+            <a href="#">History</a>
+            <a href="#">My Ranking</a>
+            <a href="signin.html">Logout</a>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      
+      <div class="setTime">
+          <hp class="timer">
+            <span class="minutes">00</span>
+            :
+            <span class="seconds">00</span>
+      </div>
+
+
+        <div class="btn-navigation">
+            <button class="btn-nav pause" id="pause" type="button" data-action="pause">Pause <i class="far fa-pause-circle"></i></button>
+            <button class="btn-nav continue" id="continue" type="button" data-action="continue">Start <i class="fas fa-arrow-circle-right"></i></button>
+            <button class="btn-nav" id="restart" type="button">Restart <i class="fas fa-sync-alt"></i></button>
+
+            <button class="btn-nav" id="checkEvent" type="button">Check <i class="far fa-check-circle"></i></button>
+            <!-- <button class="btn-nav" id="level" type="button" data-toggle="collapse" data-target="#demo">Difficulty</button> -->
+              <button class="btn-nav" id="level" type="button" data-toggle="collapse" data-target="#difficulty">Difficulty <i class="fas fa-arrow-circle-down"></i></button>
+              <div id="difficulty" class="collapse">
+                <div class="sub-button">
+                  <button class="btn-nav" id="beginner" type="button">Beginner <i class="fas fa-arrow-right"></i></button>
+                <button class="btn-nav" id="intermediate" type="button">Intermediate <i class="fas fa-arrow-right"></i></button>
+                <button class="btn-nav" id="expert" type="button">Expert <i class="fas fa-arrow-right"></i></button>
+                </div>
+
+              </div>
+
+
+            <button class="btn-nav" id="rule" type="button" onclick="document.getElementById('id01').style.display='block'">Ranking<i class="fas fa-crown"></i></button>
+            <button class="btn-nav" id="how" type="button" onclick="document.getElementById('id02y').style.display='block'">How To Play <i class="far fa-question-circle"></i></button>
+
+        </div>
+    </div>
+    
+</div>
+
+
+   <!-- modal for rank display-->
+   <div id="id01" class="w3-modal rank-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Sudoku Ranking</h2>
+      </header>
+      <div class="w3-container rank-body" style="height: 300px; ">
+        <!-- <div></div> -->
+        <div class="left-rank">
+
+        </div>
+        <div class="right-rank">
+          <h4>Who Has the Guinness World Record for Fastest Sudoku Player?</h4>
+          <div class="info-ranking">
+            <img src="image/KDBV5JKYZZF2XHLECSKOVLCP2I.webp" alt="" width="100px">
+            <span>According to Guinness World Records, the fastest time to complete a “Very Easy” difficulty Sudoku puzzle was 1 minute 23.93 seconds. The record was set on May 20, 2006 by Thomas Snyder, an American Sudoku champion.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+    <!-- how to play-->
+    <div id="id02" class="w3-modal htp-modal">
+      <div class="w3-modal-content">
+        <header class="w3-container w3-teal"> 
+          <span onclick="document.getElementById('id01').style.display='none'" 
+          class="w3-button w3-display-topright">&times;</span>
+          <h2>How to play Sudoku Puzzle</h2>
+        </header>
+        <div class="w3-container rank-body" style="height: 400px; ">
+            Bla bla,...
+        </div>
+      </div>
+    </div>
+
+
+
+  
+    <footer class="footer">
+      <span>&copy; Copyright 2020 - Design by Quang Ha</span>
+ </footer>
+    
+    <script src="js/main.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</body>
+</html>
